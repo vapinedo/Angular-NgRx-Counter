@@ -1,1 +1,5 @@
-<p>counter works!</p>
+<h3>Counter Value: {{ count$ | async }}</h3>
+
+<button (click)="decrement()" class="btn btn-danger">Decrement</button>
+<button (click)="reset()" class="btn btn-secondary mx-3">Reset</button>
+<button (click)="increment()" class="btn btn-primary">Increment</button>

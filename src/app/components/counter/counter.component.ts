@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-counter',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
 
+  count$!: Observable<number>;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  increment() {
+
+  }
+
+  decrement() {
+
+  }
+
+  reset() {
+
   }
 
 }
